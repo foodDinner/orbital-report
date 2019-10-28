@@ -8,7 +8,7 @@
         <th>Launch Date</th>
     </tr>
     <tr [ngClass]="{warning : sat.shouldShowWarning()}" *ngFor = "let sat of satellites; let i = index">
-        <td *ngFor = "let sat of satellites[i] | keyvalue">{{sat.value}}</td>
+        <td *ngFor = "let sattyLight of satellites[i] | keyvalue">{{sattyLight.value}}</td>
     </tr>
 </table>
 
